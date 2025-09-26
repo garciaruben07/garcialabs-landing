@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 GarcIALabs - Landing Page Modernizada 2024-2025
 
-## Getting Started
+Landing page profesional para GarcIALabs, consultora especializada en automatización empresarial con IA para PYMEs.
 
-First, run the development server:
+## 🚀 Stack Tecnológico Moderno
 
+- **Framework**: Next.js 15 (App Router, RSC)
+- **TypeScript**: Tipado completo
+- **Styling**: Tailwind CSS + Custom Design System
+- **UI Components**: ShadCN/UI + Radix UI
+- **Animations**: Framer Motion
+- **Internationalization**: next-intl (ES/EN)
+- **Forms**: React Hook Form + Zod validation
+- **Theme**: next-themes (Dark/Light mode)
+- **Performance**: Optimizaciones Core Web Vitals
+
+## 🚀 Desarrollo
+
+### Instalación
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Variables de Entorno
+```env
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_FB_PIXEL_ID=123456789
+NEXT_PUBLIC_SITE_URL=https://garcialabs.com
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Servidor de Desarrollo
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build y Deploy
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## ✨ Características Implementadas
 
-To learn more about Next.js, take a look at the following resources:
+### 🎯 Conversión Optimizada
+- ✅ Hero Section impactante con CTAs prominentes
+- ✅ Formulario de contacto con validación robusta
+- ✅ Trust signals y badges de credibilidad
+- ✅ Mobile-first responsive design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🌐 Internacionalización
+- ✅ Soporte Español/Inglés
+- ✅ URLs localizadas (`/es`, `/en`)
+- ✅ Contenido específico por región
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎨 Diseño Moderno
+- ✅ Paleta de colores GarcIAblue personalizada
+- ✅ Componentes con glassmorphism y gradientes
+- ✅ Micro-interacciones elegantes
+- ✅ Dark/Light mode toggle
 
-## Deploy on Vercel
+### 📊 Analytics y SEO
+- ✅ Google Analytics 4 integrado
+- ✅ Facebook Pixel configurado
+- ✅ Schema.org structured data
+- ✅ Sitemap.xml y robots.txt optimizados
+- ✅ Meta tags dinámicos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ⚡ Performance
+- ✅ Core Web Vitals optimizados
+- ✅ Lazy loading de imágenes
+- ✅ Bundle splitting automático
+- ✅ CDN-ready
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ♿ Accesibilidad
+- ✅ WCAG 2.1 AA compliance
+- ✅ Keyboard navigation
+- ✅ Screen reader friendly
+- ✅ Focus management
+
+## 🎯 Secciones Implementadas
+
+1. **Header** - Navegación con theme toggle y selector de idioma
+2. **Hero Section** - CTA principal para auditorías gratuitas
+3. **Servicios** - Automatización, Capacitación IA, Consultoría
+4. **Proceso** - 4 etapas: Auditoría → Plan → Implementación → Capacitación
+5. **Beneficios** - Métricas: 60% productividad, 30h ahorro, 300% ROI
+6. **Testimonios** - 3 casos de éxito de PYMEs
+7. **FAQ** - 5 preguntas frecuentes sobre IA
+8. **Contacto** - Formulario con validación y tracking
+9. **Footer** - Links, social media, información corporativa
+
+## 🛠️ Comandos Útiles
+
+```bash
+# Desarrollo
+npm run dev
+
+# Build
+npm run build
+
+# Lint
+npm run lint
+
+# Type check
+npm run type-check
+
+# Analyze bundle
+npm run analyze
+```
+
+---
+
+**Desarrollado con ❤️ para GarcIALabs** - Automatización empresarial con IA para PYMEs
