@@ -1,32 +1,55 @@
-# 🤖 GarcIALabs - Landing Page Modernizada 2024-2025
+# 🤖 GarcIALabs - Landing Page Profesional
 
-Landing page profesional para GarcIALabs, consultora especializada en automatización empresarial con IA para PYMEs.
+**Landing page moderna para GarcIALabs** - Especialistas en automatización empresarial con IA para PYMEs.
 
-## 🚀 Stack Tecnológico Moderno
+## 🚀 Stack Tecnológico
 
-- **Framework**: Next.js 15 (App Router, RSC)
-- **TypeScript**: Tipado completo
-- **Styling**: Tailwind CSS + Custom Design System
+- **Framework**: Next.js 15 con App Router
+- **TypeScript**: Tipado completo y seguro
+- **Styling**: Tailwind CSS v4 con modo oscuro permanente
 - **UI Components**: ShadCN/UI + Radix UI
 - **Animations**: Framer Motion
-- **Internationalization**: next-intl (ES/EN)
 - **Forms**: React Hook Form + Zod validation
-- **Theme**: next-themes (Dark/Light mode)
-- **Performance**: Optimizaciones Core Web Vitals
+- **SEO**: Metadata optimizada y Schema.org
 
-## 🚀 Desarrollo
+## 🎯 Características Principales
+
+### ✨ Diseño y UX
+- ✅ **Modo oscuro permanente** con paleta GarcIAblue personalizada
+- ✅ **Responsive design** optimizado para móvil
+- ✅ **Animaciones fluidas** con Framer Motion
+- ✅ **Logo oficial integrado** (hexágono azul)
+- ✅ **Componentes modernos** sin toggles innecesarios
+
+### 🌐 Contenido
+- ✅ **Solo en español** - Sin multiidioma
+- ✅ **Navegación simplificada** sin toggles de tema/idioma
+- ✅ **Formulario de contacto** con validación completa
+- ✅ **Testimonios reales** de clientes PYMEs
+
+### 📊 SEO y Performance
+- ✅ **Meta tags optimizadas** para buscadores
+- ✅ **Structured data** con Schema.org
+- ✅ **Core Web Vitals** optimizados
+- ✅ **Sitemap.xml** y robots.txt
+
+## 🎯 Secciones Implementadas
+
+1. **Header** - Logo oficial y navegación limpia
+2. **Hero** - CTA principal "Solicitar Auditoría Gratuita"
+3. **Servicios** - Automatización, Capacitación IA, Consultoría
+4. **Proceso** - 4 etapas del trabajo con clientes
+5. **Beneficios** - Métricas: 60% productividad, 30h ahorro, 300% ROI, 95% satisfacción
+6. **Testimonios** - Casos de éxito reales
+7. **FAQ** - Preguntas frecuentes sobre IA
+8. **Contacto** - Formulario con validación
+9. **Footer** - Información corporativa completa
+
+## 🚀 Desarrollo Local
 
 ### Instalación
 ```bash
 npm install
-cp .env.example .env.local
-```
-
-### Variables de Entorno
-```env
-NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_FB_PIXEL_ID=123456789
-NEXT_PUBLIC_SITE_URL=https://garcialabs.com
 ```
 
 ### Servidor de Desarrollo
@@ -34,81 +57,50 @@ NEXT_PUBLIC_SITE_URL=https://garcialabs.com
 npm run dev
 ```
 
-### Build y Deploy
+Accede a [http://localhost:3000](http://localhost:3000)
+
+### Build para Producción
 ```bash
 npm run build
 npm start
 ```
 
-## ✨ Características Implementadas
-
-### 🎯 Conversión Optimizada
-- ✅ Hero Section impactante con CTAs prominentes
-- ✅ Formulario de contacto con validación robusta
-- ✅ Trust signals y badges de credibilidad
-- ✅ Mobile-first responsive design
-
-### 🌐 Internacionalización
-- ✅ Soporte Español/Inglés
-- ✅ URLs localizadas (`/es`, `/en`)
-- ✅ Contenido específico por región
-
-### 🎨 Diseño Moderno
-- ✅ Paleta de colores GarcIAblue personalizada
-- ✅ Componentes con glassmorphism y gradientes
-- ✅ Micro-interacciones elegantes
-- ✅ Dark/Light mode toggle
-
-### 📊 Analytics y SEO
-- ✅ Google Analytics 4 integrado
-- ✅ Facebook Pixel configurado
-- ✅ Schema.org structured data
-- ✅ Sitemap.xml y robots.txt optimizados
-- ✅ Meta tags dinámicos
-
-### ⚡ Performance
-- ✅ Core Web Vitals optimizados
-- ✅ Lazy loading de imágenes
-- ✅ Bundle splitting automático
-- ✅ CDN-ready
-
-### ♿ Accesibilidad
-- ✅ WCAG 2.1 AA compliance
-- ✅ Keyboard navigation
-- ✅ Screen reader friendly
-- ✅ Focus management
-
-## 🎯 Secciones Implementadas
-
-1. **Header** - Navegación con theme toggle y selector de idioma
-2. **Hero Section** - CTA principal para auditorías gratuitas
-3. **Servicios** - Automatización, Capacitación IA, Consultoría
-4. **Proceso** - 4 etapas: Auditoría → Plan → Implementación → Capacitación
-5. **Beneficios** - Métricas: 60% productividad, 30h ahorro, 300% ROI
-6. **Testimonios** - 3 casos de éxito de PYMEs
-7. **FAQ** - 5 preguntas frecuentes sobre IA
-8. **Contacto** - Formulario con validación y tracking
-9. **Footer** - Links, social media, información corporativa
-
-## 🛠️ Comandos Útiles
+## 🔧 Comandos Disponibles
 
 ```bash
-# Desarrollo
-npm run dev
-
-# Build
-npm run build
-
-# Lint
-npm run lint
-
-# Type check
-npm run type-check
-
-# Analyze bundle
-npm run analyze
+npm run dev          # Servidor de desarrollo
+npm run build        # Build de producción
+npm run start        # Servidor de producción
+npm run lint         # Linting con ESLint
 ```
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/                 # App Router de Next.js
+├── components/          # Componentes React
+│   ├── ui/             # Componentes base (shadcn/ui)
+│   └── ...             # Secciones de la landing
+├── lib/                # Utilities y configuraciones
+└── ...
+```
+
+## 🎨 Colores GarcIAblue
+
+La aplicación usa una paleta personalizada `garciablue`:
+- **garciablue-500**: `#0ea5e9` (color principal)
+- **garciablue-600**: `#0284c7` (hover states)
+- **garciablue-700**: `#0369a1` (elementos oscuros)
+
+## 🌐 Deploy
+
+El proyecto está optimizado para deploy en:
+- ✅ **Vercel** (recomendado para Next.js)
+- ✅ **Netlify**
+- ✅ **Railway**
+- ✅ **Cualquier hosting con Node.js**
 
 ---
 
-**Desarrollado con ❤️ para GarcIALabs** - Automatización empresarial con IA para PYMEs
+**🚀 Desarrollado para GarcIALabs** - Automatización empresarial con IA para PYMEs
