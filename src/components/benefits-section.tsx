@@ -15,21 +15,15 @@ export function BenefitsSection() {
     }
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' }
-    }
-  };
-
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: 'easeOut' }
+      transition: {
+        duration: 0.5,
+        ease: [0.25, 0.1, 0.25, 1] as const
+      }
     }
   };
 
