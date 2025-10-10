@@ -29,11 +29,11 @@ export function ServicesSection() {
     {
       icon: Bot,
       title: "Automatización de Procesos",
-      description: "Automatiza documentos, emails y tareas repetitivas. Ahorra hasta 30 horas semanales.",
+      description: "Automatiza procesos lentos y tareas repetitivas. Ahorra hasta 30 horas semanales.",
       features: [
         "Procesamiento automático de documentos",
-        "Gestión inteligente de emails",
-        "Workflows personalizados"
+        "Workflows personalizados",
+        "Agentes IA"
       ]
     },
     {

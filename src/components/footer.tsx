@@ -9,14 +9,25 @@ import {
   Clock,
   ExternalLink,
   Linkedin,
-  Twitter,
+  Instagram,
   ArrowUp
 } from 'lucide-react';
+import { useMemo } from 'react';
 
 export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Generate particle positions once using useMemo to avoid hydration mismatch
+  const particles = useMemo(() =>
+    [...Array(6)].map((_, i) => ({
+      id: i,
+      left: `${15 + (i * 13 + 7) % 70}%`,
+      top: `${20 + (i * 17 + 5) % 60}%`,
+    })),
+    []
+  );
 
   return (
     <footer className="bg-gray-900 text-white relative overflow-hidden">
@@ -78,7 +89,6 @@ export function Footer() {
                 {[
                   { name: "Servicios", href: "#services" },
                   { name: "Proceso", href: "#process" },
-                  { name: "Testimonios", href: "#testimonials" },
                   { name: "Preguntas Frecuentes", href: "#faq" },
                   { name: "Contacto", href: "#contact" }
                 ].map((link) => (
@@ -137,7 +147,7 @@ export function Footer() {
             <div className="flex items-center gap-4 mb-6 lg:mb-0">
               <span className="text-gray-400 text-sm mr-2">Síguenos:</span>
               <a
-                href="https://linkedin.com/company/garcialabs"
+                href="https://linkedin.com/company/garcia-labs"
                 aria-label="LinkedIn"
                 className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-blue-400 transition-colors group"
                 target="_blank"
@@ -146,13 +156,13 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com/garcialabs"
-                aria-label="Twitter"
-                className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-blue-400 transition-colors group"
+                href="https://www.instagram.com/garcialabs/"
+                aria-label="Instagram"
+                className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-pink-400 transition-colors group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="mailto:hola@garcialabs.com"
@@ -192,7 +202,7 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm text-center md:text-left">
-              © 2024 GarcIALabs. Todos los derechos reservados.
+              © 2025 GarcIALabs. Todos los derechos reservados.
             </div>
 
             <button
@@ -220,13 +230,13 @@ export function Footer() {
 
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(6)].map((_, i) => (
+        {particles.map((particle) => (
           <div
-            key={i}
+            key={particle.id}
             className="absolute w-1 h-1 bg-garciablue-500/20 rounded-full"
             style={{
-              left: `${15 + Math.random() * 70}%`,
-              top: `${20 + Math.random() * 60}%`,
+              left: particle.left,
+              top: particle.top,
             }}
           />
         ))}

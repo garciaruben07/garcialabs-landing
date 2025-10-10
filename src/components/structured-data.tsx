@@ -89,7 +89,7 @@ export function StructuredData() {
         "name": "¿Cuánto tiempo toma ver resultados?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Los primeros resultados los verás en 2-4 semanas. El ROI completo típicamente se alcanza entre 3-6 meses, dependiendo del alcance del proyecto."
+          "text": "Los primeros resultados los verás en 1-3 semanas. El ROI completo típicamente se alcanza entre 2-3 meses, dependiendo del alcance del proyecto."
         }
       }
     ]

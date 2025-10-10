@@ -20,7 +20,7 @@ export function ProcessSection() {
     {
       icon: Wrench,
       title: "Implementación",
-      description: "Desarrollamos y configuramos las soluciones de IA en tu empresa",
+      description: "Desarrollamos y configuramos las automatizaciones y/o soluciones con IA en tu empresa",
       color: "from-garciablue-700 to-garciablue-800"
     },
     {
@@ -90,7 +90,7 @@ export function ProcessSection() {
         <div className="text-center mt-16">
           <div className="inline-flex items-center gap-2 bg-garciablue-50 dark:bg-garciablue-950/30 text-garciablue-700 dark:text-garciablue-300 px-6 py-3 rounded-full text-sm font-medium border border-garciablue-200 dark:border-garciablue-800">
             <CheckCircle2 className="w-5 h-5" />
-            Proceso probado con más de 50 empresas
+            Metodología probada y validada en producción
           </div>
         </div>
       </div>

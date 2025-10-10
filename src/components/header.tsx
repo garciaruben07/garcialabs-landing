@@ -12,7 +12,6 @@ export function Header() {
     { name: 'Inicio', href: '#hero' },
     { name: 'Servicios', href: '#services' },
     { name: 'Proceso', href: '#process' },
-    { name: 'Testimonios', href: '#testimonials' },
     { name: 'Preguntas Frecuentes', href: '#faq' },
     { name: 'Contacto', href: '#contact' },
   ];
@@ -22,10 +21,10 @@ export function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center">
+            <a href="#hero" className="flex-shrink-0 flex items-center hover:opacity-80 transition-opacity duration-200">
               <Logo variant="symbol" size={32} className="mr-3" priority={true} />
               <span className="font-bold text-xl text-foreground">GarcIALabs</span>
-            </div>
+            </a>
           </div>
 
           {/* Desktop Navigation */}

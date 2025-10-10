@@ -21,15 +21,15 @@ export function FAQSection() {
     },
     {
       question: "¿Cuánto tiempo toma ver resultados?",
-      answer: "Los primeros resultados los verás en 2-4 semanas. El ROI completo típicamente se alcanza entre 3-6 meses, dependiendo del alcance del proyecto."
+      answer: "Los primeros resultados los verás en 1-3 semanas. El ROI completo típicamente se alcanza entre 2-3 meses, dependiendo del alcance del proyecto."
     },
     {
       question: "¿Qué pasa si mi equipo no tiene conocimientos técnicos?",
       answer: "No hay problema. Nuestras soluciones están diseñadas para ser user-friendly y brindamos capacitación completa a todo tu equipo."
     },
     {
-      question: "¿Ofrecen soporte continuo?",
-      answer: "Sí, incluimos soporte técnico por 6 meses y actualizaciones gratuitas. También ofrecemos planes de soporte extendido."
+      question: "¿Trabajan con empresas de todos los tamaños?",
+      answer: "Sí, desde startups hasta empresas establecidas. Adaptamos nuestras soluciones al tamaño, presupuesto y necesidades específicas de cada cliente."
     }
   ];
 

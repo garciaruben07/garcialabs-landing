@@ -166,7 +166,7 @@ export function BenefitsSection() {
                 <h3 className="text-2xl font-bold">¿Listo para estos resultados?</h3>
               </div>
               <p className="text-garciablue-100 text-lg mb-6">
-                Únete a más de 50 empresas que ya transformaron su productividad con IA
+                Da el primer paso hacia la automatización inteligente
               </p>
               <div className="inline-flex items-center gap-2 bg-white text-garciablue-600 px-6 py-3 rounded-full font-semibold hover:bg-garciablue-50 transition-colors cursor-pointer">
                 <span>Solicitar auditoría gratuita</span>
