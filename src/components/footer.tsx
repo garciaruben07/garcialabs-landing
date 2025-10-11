@@ -60,15 +60,15 @@ export function Footer() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors cursor-pointer">
                   <MapPin className="w-4 h-4 text-garciablue-400" />
-                  <span>Madrid, España</span>
+                  <span>Lugo, España</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors cursor-pointer">
                   <Phone className="w-4 h-4 text-garciablue-400" />
-                  <span>+34 600 123 456</span>
+                  <span>+34 629 167 110</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors cursor-pointer">
                   <Mail className="w-4 h-4 text-garciablue-400" />
-                  <span>hola@garcialabs.com</span>
+                  <span>ruben@garcialabs.es</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Clock className="w-4 h-4 text-garciablue-400" />
@@ -165,7 +165,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="mailto:hola@garcialabs.com"
+                href="mailto:ruben@garcialabs.es"
                 aria-label="Email"
                 className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-garciablue-400 transition-colors group"
                 target="_blank"
