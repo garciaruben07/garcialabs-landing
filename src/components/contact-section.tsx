@@ -217,11 +217,11 @@ export function ContactSection() {
                 <div className="space-y-3 text-sm text-muted-foreground">
                   <div className="flex items-center gap-3">
                     <Mail className="w-4 h-4 text-garciablue-500" />
-                    <span>hola@garcialabs.com</span>
+                    <span>ruben@garcialabs.es</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="w-4 h-4 text-garciablue-500" />
-                    <span>+34 600 123 456</span>
+                    <span>+34 629 167 110</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-garciablue-500" />
