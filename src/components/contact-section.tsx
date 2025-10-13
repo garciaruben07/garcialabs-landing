@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import toast from 'react-hot-toast';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -20,13 +21,14 @@ import {
   Target,
   Sparkles
 } from 'lucide-react';
+import { submitContactForm } from '@/app/actions/contact';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'El nombre debe tener al menos 2 caracteres'),
   email: z.string().email('Email inválido'),
   company: z.string().min(2, 'El nombre de la empresa es requerido'),
   phone: z.string().optional(),
-  description: z.string().min(10, 'Describe tu empresa y necesidades')
+  message: z.string().min(10, 'Describe tu empresa y necesidades')
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -42,10 +44,39 @@ export function ContactSection() {
   });
 
   const onSubmit = async (data: ContactForm) => {
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    console.log('Form data:', data);
-    reset();
+    try {
+      // Mostrar toast de carga
+      const loadingToast = toast.loading('Enviando mensaje...');
+
+      // Enviar el formulario usando Server Action
+      const result = await submitContactForm(data);
+
+      // Cerrar el toast de carga
+      toast.dismiss(loadingToast);
+
+      if (result.success) {
+        // Mostrar mensaje de éxito
+        toast.success(result.message || '¡Mensaje enviado con éxito!', {
+          duration: 5000,
+          icon: '✅',
+        });
+        // Resetear el formulario
+        reset();
+      } else {
+        // Mostrar mensaje de error
+        toast.error(result.error || 'Error al enviar el mensaje', {
+          duration: 5000,
+          icon: '❌',
+        });
+      }
+    } catch (error) {
+      toast.dismiss();
+      toast.error('Error inesperado. Por favor, intenta de nuevo.', {
+        duration: 5000,
+        icon: '❌',
+      });
+      console.error('Error al enviar formulario:', error);
+    }
   };
 
   return (
@@ -147,18 +178,18 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="description" className="flex items-center gap-2 text-sm font-medium text-foreground">
+                    <Label htmlFor="message" className="flex items-center gap-2 text-sm font-medium text-foreground">
                       <MessageSquare className="w-4 h-4" />
                       Cuéntanos sobre tu empresa y necesidades
                     </Label>
                     <Textarea
-                      id="description"
+                      id="message"
                       placeholder="Describe tu empresa, procesos actuales y qué te gustaría automatizar..."
-                      {...register('description')}
+                      {...register('message')}
                       rows={4}
                       className="resize-none"
                     />
-                    {errors.description && <p className="text-sm text-red-500">{errors.description.message}</p>}
+                    {errors.message && <p className="text-sm text-red-500">{errors.message.message}</p>}
                   </div>
 
                   <Button
