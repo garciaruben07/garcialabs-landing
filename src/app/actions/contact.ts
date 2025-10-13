@@ -14,34 +14,47 @@ const contactFormSchema = z.object({
 
 export type ContactFormData = z.infer<typeof contactFormSchema>
 
-// Inicializar Resend
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Función para obtener instancia de Resend de forma segura
+function getResendClient() {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    throw new Error('RESEND_API_KEY no está configurada')
+  }
+  return new Resend(apiKey)
+}
 
-export async function submitContactForm(data: ContactFormData) {
+export async function submitContactForm(formData: ContactFormData) {
   try {
+    console.log('🔵 Server Action iniciada - submitContactForm')
+
     // Validar los datos
-    const validatedData = contactFormSchema.parse(data)
+    const validatedData = contactFormSchema.parse(formData)
+    console.log('✅ Datos validados correctamente')
 
     // Verificar que la API key esté configurada
     if (!process.env.RESEND_API_KEY) {
-      console.error('RESEND_API_KEY no está configurada')
+      console.error('❌ RESEND_API_KEY no está configurada')
       return {
         success: false,
         error: 'Error de configuración del servidor. Por favor, contacta al administrador.',
       }
     }
+    console.log('✅ RESEND_API_KEY está configurada')
 
     // Verificar que el email de destino esté configurado
     if (!process.env.CONTACT_EMAIL) {
-      console.error('CONTACT_EMAIL no está configurada')
+      console.error('❌ CONTACT_EMAIL no está configurada')
       return {
         success: false,
         error: 'Error de configuración del servidor. Por favor, contacta al administrador.',
       }
     }
+    console.log('✅ CONTACT_EMAIL está configurada:', process.env.CONTACT_EMAIL)
 
     // Enviar el email
-    const { error } = await resend.emails.send({
+    console.log('📧 Intentando enviar email...')
+    const resend = getResendClient()
+    const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'Garcia Labs <onboarding@resend.dev>',
       to: process.env.CONTACT_EMAIL,
       replyTo: validatedData.email,
@@ -102,13 +115,14 @@ Fecha: ${new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })}
     })
 
     if (error) {
-      console.error('Error al enviar email:', error)
+      console.error('❌ Error al enviar email:', error)
       return {
         success: false,
         error: 'No se pudo enviar el mensaje. Por favor, intenta de nuevo más tarde.',
       }
     }
 
+    console.log('✅ Email enviado exitosamente. ID:', data?.id)
     return {
       success: true,
       message: '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.',

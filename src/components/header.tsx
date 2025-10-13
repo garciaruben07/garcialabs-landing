@@ -13,7 +13,6 @@ export function Header() {
     { name: 'Servicios', href: '#services' },
     { name: 'Proceso', href: '#process' },
     { name: 'Preguntas Frecuentes', href: '#faq' },
-    { name: 'Contacto', href: '#contact' },
   ];
 
   return (
