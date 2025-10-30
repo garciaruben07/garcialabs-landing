@@ -105,16 +105,16 @@ export function BenefitsSection() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.label}
-              className={`relative group ${benefit.bgColor} ${benefit.borderColor} border-2 rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300`}
+              className={`relative group ${benefit.bgColor} ${benefit.borderColor} border-2 rounded-2xl p-6 sm:p-8 hover:shadow-2xl transition-shadow duration-300`}
               variants={cardVariants}
               style={{ perspective: '1000px' }}
             >
               {/* Shine effect */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:translate-x-full transition-all duration-1000 transform -skew-x-12"></div>
-              
+
               {/* Icon */}
-              <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${benefit.color} flex items-center justify-center mb-6 mx-auto relative z-10`}>
-                <benefit.icon className="w-8 h-8 text-white" />
+              <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-r ${benefit.color} flex items-center justify-center mb-4 sm:mb-6 mx-auto relative z-10`}>
+                <benefit.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                 <motion.div
                   className="absolute -top-2 -right-2"
                   initial={{ opacity: 0, scale: 0 }}
@@ -122,19 +122,19 @@ export function BenefitsSection() {
                   transition={{ duration: 0.3, delay: 0.5 + index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <ArrowUpRight className="w-5 h-5 text-foreground bg-white dark:bg-gray-900 rounded-full p-1 shadow-md" />
+                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-900 dark:text-foreground bg-white dark:bg-gray-900 rounded-full p-1 shadow-md" />
                 </motion.div>
               </div>
 
               {/* Value */}
-              <div className="text-center mb-4">
-                <div className={`text-4xl lg:text-5xl font-bold bg-gradient-to-r ${benefit.color} bg-clip-text text-transparent`}>
+              <div className="text-center mb-3 sm:mb-4 relative z-10">
+                <div className={`text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r ${benefit.color} bg-clip-text text-transparent`}>
                   {benefit.value}
                 </div>
               </div>
 
               {/* Label */}
-              <p className="text-center text-muted-foreground font-medium leading-relaxed">
+              <p className="text-center text-gray-700 dark:text-muted-foreground font-medium leading-relaxed text-sm sm:text-base relative z-10">
                 {benefit.label}
               </p>
 

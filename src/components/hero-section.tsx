@@ -128,11 +128,11 @@ export function HeroSection() {
 
           {/* Trust Badge */}
           <motion.div
-            className="inline-flex items-center gap-2 bg-garciablue-50 dark:bg-garciablue-950/30 text-garciablue-700 dark:text-garciablue-300 px-4 py-2 rounded-full text-sm font-medium border border-garciablue-200 dark:border-garciablue-800"
+            className="inline-flex items-center gap-2 bg-garciablue-50 dark:bg-garciablue-950/30 text-garciablue-700 dark:text-garciablue-300 px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-medium border border-garciablue-200 dark:border-garciablue-800 shadow-sm"
             variants={itemVariants}
           >
-            <Sparkles className="h-4 w-4" />
-            Solo 10 auditorías gratuitas al mes
+            <Sparkles className="h-4 w-4 flex-shrink-0" />
+            <span className="whitespace-nowrap">Solo 10 auditorías gratuitas al mes</span>
           </motion.div>
         </motion.div>
 
