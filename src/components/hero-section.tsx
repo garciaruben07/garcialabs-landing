@@ -119,7 +119,10 @@ export function HeroSection() {
               className="px-8 py-6 text-lg font-semibold rounded-full border-2 border-garciablue-500 text-garciablue-600 hover:bg-garciablue-50 dark:hover:bg-garciablue-950/20 group"
               asChild
             >
-
+              <a href="#projects" className="flex items-center gap-2">
+                Ver Casos de Éxito
+                <Play className="h-5 w-5 group-hover:scale-110 transition-transform" />
+              </a>
             </Button>
           </motion.div>
 

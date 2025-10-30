@@ -11,7 +11,9 @@ export function Header() {
   const navigation = [
     { name: 'Inicio', href: '#hero' },
     { name: 'Servicios', href: '#services' },
+    { name: 'Quiénes Somos', href: '#about' },
     { name: 'Proceso', href: '#process' },
+    { name: 'Proyectos', href: '#projects' },
     { name: 'Preguntas Frecuentes', href: '#faq' },
   ];
 

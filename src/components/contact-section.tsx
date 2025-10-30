@@ -195,11 +195,20 @@ export function ContactSection() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full h-14 bg-garciablue-500 hover:bg-garciablue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+                    className="w-full h-14 bg-garciablue-500 hover:bg-garciablue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <div className="flex items-center gap-3">
-                      <Send className="w-5 h-5" />
-                      {isSubmitting ? 'Enviando...' : 'Solicitar Auditoría Gratuita'}
+                      {isSubmitting ? (
+                        <>
+                          <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                          Enviando...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-5 h-5" />
+                          Solicitar Auditoría Gratuita
+                        </>
+                      )}
                     </div>
                   </Button>
 

@@ -162,10 +162,13 @@ export function BenefitsSection() {
               <p className="text-garciablue-100 text-lg mb-6">
                 Da el primer paso hacia la automatización inteligente
               </p>
-              <div className="inline-flex items-center gap-2 bg-white text-garciablue-600 px-6 py-3 rounded-full font-semibold hover:bg-garciablue-50 transition-colors cursor-pointer">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 bg-white text-garciablue-600 px-6 py-3 rounded-full font-semibold hover:bg-garciablue-50 transition-colors cursor-pointer"
+              >
                 <span>Solicitar auditoría gratuita</span>
                 <ArrowUpRight className="w-4 h-4" />
-              </div>
+              </a>
             </div>
           </motion.div>
         </div>
