@@ -78,7 +78,7 @@ export function ProcessSection() {
                     <div className="w-0.5 h-16 bg-gradient-to-b from-garciablue-300 to-garciablue-500 mx-auto mt-6"></div>
                   )}
                 </div>
-                <div className="flex-1 bg-white dark:bg-gray-900 rounded-xl p-6 shadow-md border border-gray-100 dark:border-gray-800">
+                <div className="flex-1 bg-gray-900 rounded-xl p-6 shadow-md border border-gray-800">
                   <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                 </div>

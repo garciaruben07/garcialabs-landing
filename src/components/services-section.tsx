@@ -96,7 +96,7 @@ export function ServicesSection() {
         >
           {services.map((service, index) => (
             <motion.div key={service.title} variants={cardVariants}>
-              <Card className="h-full bg-white dark:bg-gray-900/95 backdrop-blur-sm border-gray-200 dark:border-gray-800 hover:shadow-2xl shadow-md transition-all duration-300 group">
+              <Card className="h-full bg-gray-900/95 backdrop-blur-sm border-gray-200 dark:border-gray-800 hover:shadow-2xl shadow-md transition-all duration-300 group">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 bg-gradient-to-r from-garciablue-500 to-garciablue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />

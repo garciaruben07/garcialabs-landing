@@ -75,7 +75,7 @@ export function FAQSection() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl px-6 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-gray-900 border border-gray-800 rounded-xl px-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-6 group">
                   <div className="flex items-center gap-4 w-full">

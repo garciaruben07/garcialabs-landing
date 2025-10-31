@@ -122,7 +122,7 @@ export function BenefitsSection() {
                   transition={{ duration: 0.3, delay: 0.5 + index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-900 dark:text-foreground bg-white dark:bg-gray-900 rounded-full p-1 shadow-md" />
+                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 text-foreground bg-gray-900 rounded-full p-1 shadow-md" />
                 </motion.div>
               </div>
 

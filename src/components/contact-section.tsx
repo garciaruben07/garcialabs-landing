@@ -118,7 +118,7 @@ export function ContactSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-800">
+              <div className="bg-gray-900 rounded-2xl p-8 shadow-xl border border-gray-800">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="flex items-center gap-2 text-sm font-medium text-foreground">
