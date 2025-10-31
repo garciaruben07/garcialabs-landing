@@ -33,37 +33,37 @@ export function BenefitsSection() {
       value: "60%",
       label: "Aumento en productividad",
       color: "from-green-500 to-emerald-600",
-      bgColor: "bg-green-50 dark:bg-green-950/20",
-      borderColor: "border-green-200 dark:border-green-800"
+      bgColor: "bg-green-50",
+      borderColor: "border-green-200"
     },
     {
       icon: Clock,
       value: "30h",
       label: "Ahorro semanal en tareas",
       color: "from-blue-500 to-cyan-600",
-      bgColor: "bg-blue-50 dark:bg-blue-950/20",
-      borderColor: "border-blue-200 dark:border-blue-800"
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200"
     },
     {
       icon: DollarSign,
       value: "300%",
       label: "ROI promedio en 6 meses",
       color: "from-purple-500 to-violet-600",
-      bgColor: "bg-purple-50 dark:bg-purple-950/20",
-      borderColor: "border-purple-200 dark:border-purple-800"
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200"
     },
     {
       icon: Heart,
       value: "95%",
       label: "Satisfacción de clientes",
       color: "from-rose-500 to-pink-600",
-      bgColor: "bg-rose-50 dark:bg-rose-950/20",
-      borderColor: "border-rose-200 dark:border-rose-800"
+      bgColor: "bg-rose-50",
+      borderColor: "border-rose-200"
     }
   ];
 
   return (
-    <section id="benefits" className="py-24 bg-gradient-to-br from-garciablue-50/30 via-background to-garciablue-100/20 dark:from-garciablue-950/20 dark:via-background dark:to-garciablue-900/10 relative overflow-hidden">
+    <section id="benefits" className="py-24 bg-gradient-to-br from-garciablue-50/30 via-background to-garciablue-100/20 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/4 w-64 h-64 bg-garciablue-500/5 rounded-full blur-3xl"></div>
@@ -122,7 +122,7 @@ export function BenefitsSection() {
                   transition={{ duration: 0.3, delay: 0.5 + index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-900 dark:text-foreground bg-white dark:bg-gray-900 rounded-full p-1 shadow-md" />
+                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-900 bg-white rounded-full p-1 shadow-md" />
                 </motion.div>
               </div>
 
@@ -134,7 +134,7 @@ export function BenefitsSection() {
               </div>
 
               {/* Label */}
-              <p className="text-center text-gray-700 dark:text-muted-foreground font-medium leading-relaxed text-sm sm:text-base relative z-10">
+              <p className="text-center text-gray-700 font-medium leading-relaxed text-sm sm:text-base relative z-10">
                 {benefit.label}
               </p>
 

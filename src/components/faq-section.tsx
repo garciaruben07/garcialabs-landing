@@ -34,7 +34,7 @@ export function FAQSection() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-gradient-to-br from-garciablue-50/10 via-background to-garciablue-100/20 dark:from-garciablue-950/10 dark:via-background dark:to-garciablue-900/20 relative overflow-hidden">
+    <section id="faq" className="py-24 bg-gradient-to-br from-garciablue-50/10 via-background to-garciablue-100/20 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-10 w-48 h-48 bg-garciablue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-garciablue-400/5 rounded-full blur-3xl"></div>
@@ -75,7 +75,7 @@ export function FAQSection() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl px-6 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white border border-gray-200 rounded-xl px-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-6 group">
                   <div className="flex items-center gap-4 w-full">
@@ -96,9 +96,9 @@ export function FAQSection() {
         </motion.div>
 
         <div className="text-center mt-12">
-          <div className="bg-garciablue-50 dark:bg-garciablue-950/30 rounded-2xl p-6 border border-garciablue-200 dark:border-garciablue-800">
+          <div className="bg-garciablue-50 rounded-2xl p-6 border border-garciablue-200">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <HelpCircle className="w-6 h-6 text-garciablue-600 dark:text-garciablue-400" />
+              <HelpCircle className="w-6 h-6 text-garciablue-600" />
               <h3 className="text-xl font-bold text-foreground">¿Tienes más preguntas?</h3>
             </div>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">

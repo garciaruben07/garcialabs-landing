@@ -32,7 +32,7 @@ export function ProcessSection() {
   ];
 
   return (
-    <section id="process" className="py-24 bg-gradient-to-br from-garciablue-50/20 via-background to-garciablue-100/10 dark:from-garciablue-950/10 dark:via-background dark:to-garciablue-900/20 relative overflow-hidden">
+    <section id="process" className="py-24 bg-gradient-to-br from-garciablue-50/20 via-background to-garciablue-100/10 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-10 w-48 h-48 bg-garciablue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-40 h-40 bg-garciablue-400/5 rounded-full blur-3xl"></div>
@@ -78,7 +78,7 @@ export function ProcessSection() {
                     <div className="w-0.5 h-16 bg-gradient-to-b from-garciablue-300 to-garciablue-500 mx-auto mt-6"></div>
                   )}
                 </div>
-                <div className="flex-1 bg-white dark:bg-gray-900 rounded-xl p-6 shadow-md border border-gray-100 dark:border-gray-800">
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-md border border-gray-100">
                   <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                 </div>
@@ -88,7 +88,7 @@ export function ProcessSection() {
         </div>
 
         <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-2 bg-garciablue-50 dark:bg-garciablue-950/30 text-garciablue-700 dark:text-garciablue-300 px-6 py-3 rounded-full text-sm font-medium border border-garciablue-200 dark:border-garciablue-800">
+          <div className="inline-flex items-center gap-2 bg-garciablue-50 text-garciablue-700 px-6 py-3 rounded-full text-sm font-medium border border-garciablue-200">
             <CheckCircle2 className="w-5 h-5" />
             Metodología probada y validada en producción
           </div>
