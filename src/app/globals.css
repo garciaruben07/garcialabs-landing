@@ -53,9 +53,8 @@
   --animate-scale-in: scaleIn 0.5s ease-out;
 }
 
-/* Force Dark Mode Always */
-@theme {
-  /* Override default colors with dark mode values */
+/* Dark Mode Colors */
+.dark {
   --color-background: 224 71.4% 4.1%;
   --color-foreground: 210 40% 98%;
   --color-card: 224 71.4% 4.1%;
