@@ -177,7 +177,7 @@ export function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-24 bg-gradient-to-br from-garciablue-950 via-background to-background relative overflow-hidden"
+      className="py-24 bg-gradient-to-br from-garciablue-950 via-background to-background dark:from-garciablue-950/50 relative overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
@@ -217,7 +217,7 @@ export function ProjectsSection() {
                     key={project.id}
                     className="flex-[0_0_100%] min-w-0 pl-4 sm:pl-6"
                   >
-                    <Card className="bg-white/80 backdrop-blur-sm border-garciablue-500/20 hover:border-garciablue-500/40 transition-all duration-300 shadow-xl">
+                    <Card className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-garciablue-500/20 hover:border-garciablue-500/40 transition-all duration-300 shadow-xl">
                       <CardContent className="p-0">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                           {/* Image/Video Section */}
@@ -314,7 +314,7 @@ export function ProjectsSection() {
                                   return (
                                     <div
                                       key={index}
-                                      className="flex items-start gap-3 bg-garciablue-50/50 rounded-lg p-3 border border-garciablue-200/30"
+                                      className="flex items-start gap-3 bg-garciablue-50/50 dark:bg-garciablue-950/20 rounded-lg p-3 border border-garciablue-200/30 dark:border-garciablue-800/30"
                                     >
                                       <div className="w-8 h-8 flex-shrink-0 bg-garciablue-500/10 rounded-lg flex items-center justify-center">
                                         <IconComponent className="w-5 h-5 text-garciablue-500" />
@@ -381,14 +381,14 @@ export function ProjectsSection() {
             {/* Navigation Arrows */}
             <button
               onClick={scrollPrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-6 w-12 h-12 bg-white border-2 border-garciablue-500/30 rounded-full flex items-center justify-center text-garciablue-500 hover:bg-garciablue-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl z-10"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-6 w-12 h-12 bg-white dark:bg-gray-900 border-2 border-garciablue-500/30 rounded-full flex items-center justify-center text-garciablue-500 hover:bg-garciablue-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl z-10"
               aria-label="Previous project"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={scrollNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-6 w-12 h-12 bg-white border-2 border-garciablue-500/30 rounded-full flex items-center justify-center text-garciablue-500 hover:bg-garciablue-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl z-10"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-6 w-12 h-12 bg-white dark:bg-gray-900 border-2 border-garciablue-500/30 rounded-full flex items-center justify-center text-garciablue-500 hover:bg-garciablue-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl z-10"
               aria-label="Next project"
             >
               <ChevronRight className="w-6 h-6" />

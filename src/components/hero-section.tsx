@@ -38,25 +38,25 @@ export function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-garciablue-950/20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-garciablue-50/30 to-garciablue-100/20 dark:from-background dark:via-background dark:to-garciablue-950/20">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-garciablue-500/10 rounded-full blur-xl"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-garciablue-400/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-40 left-20 w-24 h-24 bg-garciablue-600/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 bg-garciablue-300/10 rounded-full blur-xl"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-garciablue-500/20 dark:bg-garciablue-500/10 rounded-full blur-xl"></div>
+        <div className="absolute top-40 right-20 w-32 h-32 bg-garciablue-400/20 dark:bg-garciablue-400/10 rounded-full blur-xl"></div>
+        <div className="absolute bottom-40 left-20 w-24 h-24 bg-garciablue-600/20 dark:bg-garciablue-600/10 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-10 w-16 h-16 bg-garciablue-300/20 dark:bg-garciablue-300/10 rounded-full blur-xl"></div>
       </div>
 
       {/* Floating Icons */}
       <motion.div
-        className="absolute top-20 left-1/4 text-garciablue-500/20"
+        className="absolute top-20 left-1/4 text-garciablue-500/30 dark:text-garciablue-500/20"
         variants={floatingVariants}
         animate="float"
       >
         <Sparkles size={32} />
       </motion.div>
       <motion.div
-        className="absolute top-32 right-1/4 text-garciablue-400/20"
+        className="absolute top-32 right-1/4 text-garciablue-400/30 dark:text-garciablue-400/20"
         variants={floatingVariants}
         animate="float"
         transition={{ delay: 2 }}
@@ -64,7 +64,7 @@ export function HeroSection() {
         <Zap size={28} />
       </motion.div>
       <motion.div
-        className="absolute bottom-32 left-1/3 text-garciablue-600/20"
+        className="absolute bottom-32 left-1/3 text-garciablue-600/30 dark:text-garciablue-600/20"
         variants={floatingVariants}
         animate="float"
         transition={{ delay: 4 }}
@@ -116,7 +116,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="px-8 py-6 text-lg font-semibold rounded-full border-2 border-garciablue-500 text-garciablue-400 hover:bg-garciablue-950/20 group"
+              className="px-8 py-6 text-lg font-semibold rounded-full border-2 border-garciablue-500 text-garciablue-600 dark:text-garciablue-400 hover:bg-garciablue-50 dark:hover:bg-garciablue-950/20 group"
               asChild
             >
               <a href="#projects" className="flex items-center gap-2">
@@ -128,7 +128,7 @@ export function HeroSection() {
 
           {/* Trust Badge */}
           <motion.div
-            className="inline-flex items-center gap-2 bg-garciablue-950/30 text-garciablue-300 px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-medium border border-garciablue-800 shadow-sm"
+            className="inline-flex items-center gap-2 bg-garciablue-50 dark:bg-garciablue-950/30 text-garciablue-700 dark:text-garciablue-300 px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-medium border border-garciablue-200 dark:border-garciablue-800 shadow-sm"
             variants={itemVariants}
           >
             <Sparkles className="h-4 w-4 flex-shrink-0" />
@@ -175,7 +175,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
-        <div className="w-6 h-10 border-2 border-garciablue-500/60 rounded-full flex justify-center items-start pt-2 bg-white/10 backdrop-blur-sm">
+        <div className="w-6 h-10 border-2 border-garciablue-500/60 rounded-full flex justify-center items-start pt-2 bg-white/50 dark:bg-white/10 backdrop-blur-sm">
           <motion.div
             className="w-1 h-3 bg-garciablue-500 rounded-full"
             animate={{ y: [0, 12, 0] }}

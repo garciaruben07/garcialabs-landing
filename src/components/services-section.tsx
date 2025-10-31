@@ -59,10 +59,10 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-background via-garciablue-950/20 to-background relative overflow-hidden">
+    <section id="services" className="py-24 bg-gradient-to-br from-white via-garciablue-50/30 to-white dark:from-background dark:via-garciablue-950/20 dark:to-background relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-1/4 w-48 h-48 bg-garciablue-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-garciablue-400/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-1/4 w-48 h-48 bg-garciablue-500/10 dark:bg-garciablue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-garciablue-400/10 dark:bg-garciablue-400/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -96,24 +96,24 @@ export function ServicesSection() {
         >
           {services.map((service, index) => (
             <motion.div key={service.title} variants={cardVariants}>
-              <Card className="h-full bg-gray-900/95 backdrop-blur-sm border-gray-800 hover:shadow-2xl shadow-md transition-all duration-300 group">
+              <Card className="h-full bg-white dark:bg-gray-900/95 backdrop-blur-sm border-gray-200 dark:border-gray-800 hover:shadow-2xl shadow-md transition-all duration-300 group">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 bg-gradient-to-r from-garciablue-500 to-garciablue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-white">
+                  <CardTitle className="text-xl font-bold text-gray-900 dark:text-white">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     {service.description}
                   </p>
                   <div className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-garciablue-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-gray-400">{feature}</span>
+                        <span className="text-sm text-gray-600 dark:text-gray-400">{feature}</span>
                       </div>
                     ))}
                   </div>

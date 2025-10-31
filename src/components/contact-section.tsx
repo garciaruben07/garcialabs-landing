@@ -80,7 +80,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-background via-garciablue-50/30 to-background relative overflow-hidden">
+    <section id="contact" className="py-24 bg-gradient-to-br from-background via-garciablue-50/30 to-background dark:via-garciablue-950/20 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-10 w-64 h-64 bg-garciablue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-10 w-48 h-48 bg-garciablue-400/5 rounded-full blur-3xl"></div>
@@ -118,7 +118,7 @@ export function ContactSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-800">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="flex items-center gap-2 text-sm font-medium text-foreground">
@@ -247,7 +247,7 @@ export function ContactSection() {
               ))}
 
               <motion.div
-                className="bg-garciablue-50 rounded-2xl p-6 border border-garciablue-200 mt-8"
+                className="bg-garciablue-50 dark:bg-garciablue-950/30 rounded-2xl p-6 border border-garciablue-200 dark:border-garciablue-800 mt-8"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
