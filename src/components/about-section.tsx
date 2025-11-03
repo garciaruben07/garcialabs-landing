@@ -107,11 +107,12 @@ export function AboutSection() {
             </motion.p>
           </div>
 
-          {/* Team Section - Single member for now, expandable for future */}
+          {/* Team Section */}
           <motion.div
             variants={itemVariants}
-            className="flex justify-center mb-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-3xl mx-auto"
           >
+            {/* Rubén García */}
             <div className="text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-garciablue-500/20 shadow-xl">
                 <Image
@@ -123,7 +124,28 @@ export function AboutSection() {
                 />
               </div>
               <h3 className="text-lg font-semibold text-foreground">Rubén García</h3>
-              <p className="text-sm text-muted-foreground">Fundador & CEO</p>
+              <p className="text-sm text-garciablue-400 mb-2">Fundador & CEO</p>
+              <p className="text-xs text-muted-foreground leading-relaxed px-4">
+                Especialista en automatización e IA. Lidera el desarrollo técnico y la implementación de soluciones.
+              </p>
+            </div>
+
+            {/* Daniel Ares Goy */}
+            <div className="text-center">
+              <div className="relative w-32 h-32 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-garciablue-500/20 shadow-xl">
+                <Image
+                  src="/daniel-ares.png"
+                  alt="Daniel Ares Goy - GarcIALabs"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground">Daniel Ares Goy</h3>
+              <p className="text-sm text-garciablue-400 mb-2">Consultor de Estrategia</p>
+              <p className="text-xs text-muted-foreground leading-relaxed px-4">
+                Experto en optimización de procesos y análisis de ROI. Identifica oportunidades de automatización con impacto real en el negocio.
+              </p>
             </div>
           </motion.div>
 
