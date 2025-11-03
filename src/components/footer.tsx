@@ -115,11 +115,10 @@ export function Footer() {
               <h4 className="text-lg font-semibold mb-6">Legal</h4>
               <ul className="space-y-3">
                 {[
-                  { name: "Privacidad", href: "#" },
-                  { name: "Términos", href: "#" },
-                  { name: "Cookies", href: "#" },
-                  { name: "Acerca de", href: "#" },
-                  { name: "Blog", href: "#" }
+                  { name: "Aviso Legal", href: "/aviso-legal" },
+                  { name: "Política de Privacidad", href: "/politica-privacidad" },
+                  { name: "Política de Cookies", href: "/politica-cookies" },
+                  { name: "Quiénes Somos", href: "#about" }
                 ].map((link) => (
                   <li key={link.name}>
                     <a
