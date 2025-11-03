@@ -81,7 +81,7 @@ export default function PoliticaPrivacidadPage() {
               <li><strong>Retirada del consentimiento:</strong> Retirar el consentimiento en cualquier momento</li>
             </ul>
             <p className="mt-4">
-              Para ejercer estos derechos, puedes enviar un correo electrónico a <a href="mailto:contacto@garcialabs.es" className="text-garciablue-400 hover:text-garciablue-300">contacto@garcialabs.es</a> indicando en el asunto "Protección de Datos" y adjuntando copia de tu documento de identidad.
+              Para ejercer estos derechos, puedes enviar un correo electrónico a <a href="mailto:contacto@garcialabs.es" className="text-garciablue-400 hover:text-garciablue-300">contacto@garcialabs.es</a> indicando en el asunto &ldquo;Protección de Datos&rdquo; y adjuntando copia de tu documento de identidad.
             </p>
             <p>
               Asimismo, te informamos que tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) si consideras que el tratamiento de tus datos personales no se ajusta a la normativa vigente.
