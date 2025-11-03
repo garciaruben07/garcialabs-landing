@@ -138,6 +138,7 @@ export function AboutSection() {
                   alt="Daniel Ares Goy - GarcIALabs"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: '50% 20%' }}
                   priority
                 />
               </div>
