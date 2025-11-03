@@ -11,7 +11,7 @@ export default function PoliticaPrivacidadPage() {
               <li><strong>Denominación social:</strong> RUBÉN GARCÍA SILVARREY</li>
               <li><strong>Nombre comercial:</strong> GARCIA LABS</li>
               <li><strong>NIF:</strong> 34287984K</li>
-              <li><strong>Domicilio social:</strong> ROBRA 7, 27154 OUTEIRO DE REI (LUGO)</li>
+              <li><strong>Domicilio social:</strong> Lugo, España</li>
               <li><strong>Teléfono:</strong> 629167110</li>
               <li><strong>E-mail:</strong> contacto@garcialabs.es</li>
             </ul>
